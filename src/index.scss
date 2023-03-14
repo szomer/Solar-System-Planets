@@ -1,0 +1,12 @@
+@import './scss/custom';
+
+html,
+body,
+#root,
+#root > div {
+  margin: 0;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  width: 100vw;
+}
