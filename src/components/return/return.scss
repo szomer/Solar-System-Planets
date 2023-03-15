@@ -1,1 +1,20 @@
 @import '../../scss/custom';
+
+.Return {
+  background-color: #000000d7;
+  border-bottom-right-radius: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-bottom: solid 0.5px $text-gray;
+  border-right: solid 0.5px $text-gray;
+
+  i {
+    color: $highlight;
+    font-size: 2rem;
+  }
+}
