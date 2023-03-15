@@ -1,7 +1,23 @@
 @import '../../../scss/custom';
 
 .Planetlg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
   img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #planet-img {
+    position: relative;
+    z-index: 1;
+    padding: 5%;
   }
 }

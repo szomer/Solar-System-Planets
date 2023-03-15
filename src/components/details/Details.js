@@ -18,7 +18,9 @@ import neptune from './images/neptune.png';
 function Details() {
 
     const { name } = useParams();
+
     var image;
+
     switch (name) {
         case "mercury": image = mercury; break;
         case "venus": image = venus; break;

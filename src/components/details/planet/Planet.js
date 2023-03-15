@@ -1,4 +1,5 @@
 import './planet.scss';
+import circle from '../images/circle2.png'
 
 function Planet(props) {
 
@@ -6,8 +7,10 @@ function Planet(props) {
 
 
     return (<div className="Planetlg">
-
-        <img src={planetImg} />
+        <div className='circle'>
+            <img alt='' src={circle} />
+        </div>
+        <img id="planet-img" src={planetImg} />
 
     </div>);
 }
