@@ -44,7 +44,7 @@
         justify-content: center;
         align-items: center;
         padding: 5%;
-        animation: planetGrow 0.5s;
+        animation: planetGrow 0.7s;
       }
     }
 
@@ -70,14 +70,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes planetGrow {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
   }
 }

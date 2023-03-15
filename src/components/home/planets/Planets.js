@@ -18,6 +18,7 @@ function Planets() {
             </div>
 
             <div className='planets-container'>
+
                 <div className='mercury-container'>
                     <Planet name="mercury" img={mercury} />
                     <div className='detail'>
