@@ -14,6 +14,7 @@ function App() {
         <Route exact path='/' element={<Start />} />
         <Route path='/solarsystem' element={<Home />} />
         <Route path="/planet/:name" element={<Details />} />
+        <Route path='/error' element={<Error />} />
         <Route path='*' element={<Error />} />
       </Routes>
 
