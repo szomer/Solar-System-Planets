@@ -1,0 +1,11 @@
+@import '../../../../scss/colors';
+
+.Planet {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 5px rgba(6, 0, 43, 0.5));
+  }
+}
