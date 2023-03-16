@@ -14,7 +14,7 @@ function Planets() {
     return (<div className="Planets">
         <div className='solar-container'>
             <div className='sun-container'>
-                {/* <Planet name="sun" img={sun} /> */}
+
                 <img />
             </div>
 

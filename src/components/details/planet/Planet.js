@@ -8,9 +8,9 @@ function Planet(props) {
 
     return (<div className="Planetlg">
         <div className='circle'>
-            <img alt='' src={circle} />
+            <img alt='circle with a border that floats around the planet' src={circle} />
         </div>
-        <img id="planet-img" src={planetImg} />
+        <img alt='planet of the solar system' id="planet-img" src={planetImg} />
 
     </div>);
 }

@@ -9,7 +9,7 @@ function Planet(props) {
 
     return (<div className="Planet">
         <Link to={"/planets/" + planetName} >
-            <img src={planetImg} /></Link>
+            <img alt="planet of the solar system" src={planetImg} /></Link>
     </div>);
 }
 

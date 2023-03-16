@@ -1,0 +1,14 @@
+@import '../../../scss/custom';
+
+.Credit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  p {
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+    color: #d7d7d7;
+    letter-spacing: 0.07rem;
+  }
+}

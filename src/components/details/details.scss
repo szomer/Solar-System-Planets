@@ -63,6 +63,9 @@
     }
     // Larger devices
     @media (min-width: 1000px) {
+      .Details {
+        background: $bg-filter !important;
+      }
       #planet-row {
         display: flex;
         justify-content: space-between;
