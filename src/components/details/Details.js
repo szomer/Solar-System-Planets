@@ -1,5 +1,5 @@
 import './details.scss';
-import { useParams } from "react-router-dom";
+import { redirect, useParams } from "react-router-dom";
 import { Col, Container, Row } from 'react-bootstrap';
 import Return from '../return/Return';
 import Logo from '../logo/Logo';
@@ -14,6 +14,7 @@ import jupiter from './images/jupiter.png';
 import saturn from './images/saturn.png';
 import uranus from './images/uranus.png';
 import neptune from './images/neptune.png';
+import Error from '../error/Error';
 
 function Details() {
 
@@ -30,7 +31,7 @@ function Details() {
         case "saturn": image = saturn; break;
         case "uranus": image = uranus; break;
         case "neptune": image = neptune; break;
-        default: <redirect to="/error" />; break;
+        default: return (<Error></Error>);
     }
 
     const planetData = planetFacts.filter(item => (item.planet === name))[0];
