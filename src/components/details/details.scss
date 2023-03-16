@@ -5,7 +5,6 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  color: $text-white;
 
   #planet-container {
     height: 100%;
@@ -50,13 +49,15 @@
       #planet-row {
         display: block;
         #planet-text {
-          padding-bottom: 5%;
+          padding-bottom: 1rem;
+          margin-bottom: 3rem;
         }
-
         #planet-planet {
-          height: 300px;
           width: 100%;
-          padding: 10% 5%;
+          padding: 1rem;
+          div {
+            max-width: 400px;
+          }
         }
       }
     }

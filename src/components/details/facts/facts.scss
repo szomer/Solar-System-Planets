@@ -6,6 +6,7 @@
   .planet-title {
     margin: 1rem;
     text-align: center;
+    color: $text-dark;
   }
 
   .numbers-container {
@@ -21,7 +22,13 @@
       margin: 0;
       padding: 0.5rem 0.7rem;
       h3 {
-        font-size: 0.9rem;
+        color: $text-dark;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      p {
+        color: $text-white;
       }
     }
   }
@@ -40,10 +47,13 @@
       background-color: #ffffff3f;
       border-radius: 5px;
       h3 {
-        font-size: 1.1rem;
+        color: $text-white;
+        font-size: 1rem;
         margin: 0;
         padding: 0;
         text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
       .fact-content {
         height: 100%;
@@ -52,6 +62,7 @@
         align-items: center;
         justify-content: center;
         p {
+          color: $text-white;
           font-size: 0.9rem;
           text-align: center;
         }

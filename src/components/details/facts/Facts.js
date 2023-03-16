@@ -10,7 +10,7 @@ function Facts(props) {
 
     return (<div className="Facts">
         <div className='planet-title'>
-            <h2>{title}</h2>
+            <h2 className='display-2'>{title}</h2>
         </div>
 
         <div className='numbers-container'>
