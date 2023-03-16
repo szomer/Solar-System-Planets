@@ -8,7 +8,7 @@ function Planet(props) {
     const planetImg = props.img;
 
     return (<div className="Planet">
-        <Link to={"/planet/" + planetName} >
+        <Link to={"/planets/" + planetName} >
             <img src={planetImg} /></Link>
     </div>);
 }

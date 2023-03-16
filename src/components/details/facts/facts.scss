@@ -1,1 +1,27 @@
 @import '../../../scss/custom';
+
+.Facts {
+  .planet-title {
+    margin: 1rem;
+  }
+
+  .numbers-container {
+    background-color: #ffffff3f;
+    border-radius: 5px;
+    padding: 0.5rem;
+    div {
+      text-align: center;
+      border: 1px solid black;
+    }
+  }
+
+  .facts-container {
+    background-color: #ffffff3f;
+    border-radius: 5px;
+    padding: 0.5rem;
+    div {
+      text-align: center;
+      border: 1px solid black;
+    }
+  }
+}

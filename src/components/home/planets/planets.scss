@@ -1,131 +1,276 @@
 @import '../../../scss/custom';
 
 .Planets {
-  animation: slideRight 0.7s;
-
   .solar-container {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
 
-  .sun-container {
-    flex-basis: 15%;
-    width: 100%;
-  }
-
-  .planets-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    color: $text-white;
-
-    .detail {
-      position: absolute;
-      z-index: 0;
-      top: 10%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .detail-line {
-        width: 1px;
-        background-color: $text-white;
-      }
-      .detail-text {
-        text-align: center;
-        font-size: 1rem;
-        padding-bottom: 1rem;
-      }
-    }
-
-    .mercury-container,
-    .venus-container,
-    .earth-container,
-    .mars-container,
-    .uranus-container,
-    .neptune-container {
-      padding-right: 1%;
-    }
-
-    .mercury-container,
-    .venus-container,
-    .earth-container,
-    .mars-container,
-    .jupiter-container,
-    .saturn-container,
-    .uranus-container,
-    .neptune-container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-
+    .sun-container {
+      width: 100%;
       img {
-        transition: 0.4s ease-in-out;
-        &:hover {
-          transform: scale(1.08);
+        width: 100%;
+      }
+    }
+    .planets-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: $text-white;
+      .detail {
+        position: absolute;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        .detail-line {
+          background-color: $text-white;
+        }
+        .detail-text {
+          font-size: 1rem;
         }
       }
     }
+  }
+}
 
-    .mercury-container {
-      flex-basis: 4%;
-      .mercury-line {
-        height: 28%;
+// Planets grow
+@media (min-width: 800px) {
+  .mercury-container,
+  .venus-container,
+  .earth-container,
+  .mars-container,
+  .jupiter-container,
+  .saturn-container,
+  .uranus-container,
+  .neptune-container {
+    img {
+      transition: 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.08);
       }
     }
-    .venus-container {
-      flex-basis: 7%;
-      .venus-line {
-        height: 25%;
+  }
+}
+
+// Smaller devices
+@media (max-width: 1099px) {
+  .Planets {
+    height: 100%;
+    width: 100%;
+    animation: slideDown 0.7s;
+    .solar-container {
+      display: block;
+      overflow-x: hidden;
+      .sun-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+          max-height: 200px;
+          content: url(./images/sun_mobile.png);
+          object-fit: contain;
+        }
+      }
+      .planets-container {
+        padding: 0% 10%;
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        .detail {
+          right: 50%;
+          top: 40%;
+          width: 45vw;
+          flex-direction: row;
+          .detail-line {
+            height: 1px;
+          }
+          .detail-text {
+            text-align: left;
+            padding-right: 0.5rem;
+          }
+        }
+        .mercury-container,
+        .venus-container,
+        .earth-container,
+        .mars-container,
+        .jupiter-container,
+        .saturn-container,
+        .uranus-container,
+        .neptune-container {
+          padding: 1%;
+          position: relative;
+        }
+
+        .mercury-container {
+          width: 18%;
+          max-width: 80px;
+          .mercury-line {
+            width: 55%;
+          }
+        }
+        .venus-container {
+          width: 25%;
+          max-width: 120px;
+          .venus-line {
+            width: 58%;
+          }
+        }
+        .earth-container {
+          width: 25%;
+          max-width: 120px;
+
+          .earth-line {
+            width: 59%;
+          }
+        }
+        .mars-container {
+          width: 23%;
+          max-width: 100px;
+          .mars-line {
+            width: 61%;
+          }
+        }
+        .jupiter-container {
+          width: 50%;
+          max-width: 360px;
+          .jupiter-line {
+            width: 33%;
+          }
+        }
+        .saturn-container {
+          width: 90%;
+          max-width: 580px;
+          .saturn-line {
+            width: 40%;
+          }
+        }
+        .uranus-container {
+          max-width: 180px;
+          width: 28%;
+          .uranus-line {
+            width: 50%;
+          }
+        }
+        .neptune-container {
+          width: 28%;
+          max-width: 180px;
+          .neptune-line {
+            width: 44%;
+          }
+        }
       }
     }
-    .earth-container {
-      flex-basis: 7%;
-      .earth-line {
-        height: 25%;
+  }
+}
+
+// Larger devices
+@media (min-width: 1100px) {
+  .Planets {
+    animation: slideRight 0.7s;
+
+    .solar-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .sun-container {
+      flex-basis: 15%;
+      img {
+        content: url(./images/sun.png);
       }
     }
-    .mars-container {
-      flex-basis: 5%;
-      .mars-line {
-        height: 27%;
+    .planets-container {
+      height: 100%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .detail {
+        top: 10%;
+        height: 100%;
+        flex-direction: column;
+        .detail-line {
+          width: 1px;
+        }
+        .detail-text {
+          text-align: center;
+          padding-bottom: 0.5rem;
+        }
       }
-    }
-    .jupiter-container {
-      flex-basis: 21%;
-      padding-left: 2%;
-      .jupiter-line {
-        height: 12%;
+      .mercury-container,
+      .venus-container,
+      .earth-container,
+      .mars-container,
+      .uranus-container,
+      .neptune-container {
+        padding-right: 1%;
       }
-    }
-    .saturn-container {
-      flex-basis: 34%;
-      .saturn-line {
-        height: 15%;
+
+      .mercury-container,
+      .venus-container,
+      .earth-container,
+      .mars-container,
+      .jupiter-container,
+      .saturn-container,
+      .uranus-container,
+      .neptune-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
       }
-    }
-    .uranus-container {
-      flex-basis: 11%;
-      .uranus-line {
-        height: 20.5%;
+
+      .mercury-container {
+        flex-basis: 4%;
+        .mercury-line {
+          height: 28%;
+        }
       }
-    }
-    .neptune-container {
-      flex-basis: 11%;
-      .neptune-line {
-        height: 20.5%;
+      .venus-container {
+        flex-basis: 7%;
+        .venus-line {
+          height: 25%;
+        }
+      }
+      .earth-container {
+        flex-basis: 7%;
+        .earth-line {
+          height: 25%;
+        }
+      }
+      .mars-container {
+        flex-basis: 5%;
+        .mars-line {
+          height: 27%;
+        }
+      }
+      .jupiter-container {
+        flex-basis: 21%;
+        padding-left: 2%;
+        .jupiter-line {
+          height: 12%;
+        }
+      }
+      .saturn-container {
+        flex-basis: 34%;
+        .saturn-line {
+          height: 15%;
+        }
+      }
+      .uranus-container {
+        flex-basis: 11%;
+        .uranus-line {
+          height: 20.5%;
+        }
+      }
+      .neptune-container {
+        flex-basis: 11%;
+        .neptune-line {
+          height: 20.5%;
+        }
       }
     }
   }

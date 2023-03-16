@@ -2,52 +2,76 @@ const planetFacts = [
     {
         planet: "mercury",
         facts: [
-            { title: "merc", content: "stuff" }
+            { key: 0, title: "merc", content: "stuff" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "venus",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "earth",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "mars",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "jupiter",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "saturn",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "uranus",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
     {
         planet: "neptune",
         facts: [
-            { title: "", content: "" }
+            { key: 0, title: "", content: "" }
+        ],
+        numbers: [
+            { key: 0, title: "size", content: 2398239283 }
         ]
     },
-
 ]
+
 
 export default planetFacts;

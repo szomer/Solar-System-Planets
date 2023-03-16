@@ -12,7 +12,7 @@ function Start() {
             <Row className='start-container-row  d-flex justify-content-center align-items-center'>
                 <Col md="8" className='text-center  d-inline justify-content-center' >
                     <h2>Discover the Planets of our Solar System!</h2>
-                    <Link to="/solarsystem">
+                    <Link to="/planets">
                         <p>Dive in</p>
                         <p><i className="bi bi-arrow-down-short"></i></p>
                     </Link>

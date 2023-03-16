@@ -37,14 +37,12 @@ function Details() {
 
     return (<div className="Details">
         <Logo />
-        <Return url="solarsystem" />
+        <Return url="planets" />
 
         <Container id="planet-container" fluid>
             <Row id="planet-row" >
                 <Col id="planet-text" >
-                    {name}
-                    <Facts facts={planetData.facts} />
-
+                    <Facts name={name} facts={planetData} />
                 </Col>
                 <Col id="planet-planet" >
                     <Planet img={image} />
