@@ -9,9 +9,9 @@ function Fact(props) {
         <h3 className='fact-title'>
             {title}
         </h3>
-        <p className='fact-content'>
-            {content}
-        </p>
+        <div className='fact-content'>
+            <p>{content}</p>
+        </div>
 
     </div>)
 }
